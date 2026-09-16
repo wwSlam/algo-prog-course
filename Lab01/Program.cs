@@ -26,7 +26,7 @@ Console.WriteLine($"Площадь: {roomArea} кв.м");
 Console.WriteLine($"Периметр: {roomPerimeter} м");
 
 
-
+// 
 Console.WriteLine();
 Console.WriteLine("Покупка ноутбука в рассрочку");
 
@@ -41,7 +41,7 @@ Console.WriteLine($"Цена ноутбука: {laptopPrice} руб.");
 Console.WriteLine($"Итого с процентами: {totalWithInterest} руб.");
 Console.WriteLine($"Платёж в месяц: {monthlyPayment} руб.");
 
-
+//Деление int
 Console.WriteLine();
 Console.WriteLine("Внимание: деление int");
 
@@ -53,3 +53,39 @@ double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
 
 Console.WriteLine($"25 / 4 как int:    {studentsPerGroupWrong}");
 Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+
+Console.WriteLine();
+Console.WriteLine("Способы собрать строку");
+
+string firstName = "Анна";
+string lastName = "Смирнова";
+
+// Три способа склеить строку.
+// Способ 1: конкатенация через оператор +
+string fullNameConcat = firstName + " " + lastName;
+
+// Способ 2: интерполяция через $""
+string fullNameInterp = $"{firstName} {lastName}";
+
+
+// Способ 3: метод string.Concat
+string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+
+Console.WriteLine(fullNameConcat);
+Console.WriteLine(fullNameInterp);
+Console.WriteLine(fullNameConcatMethod);
+Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+
+
+//Расчёт цены с НДС.
+Console.WriteLine();
+Console.WriteLine("Константы");
+
+const double VatRate = 0.20; 
+const string CollegeName = "ВФ ВолГУ";
+
+double productPrice = 1000;
+double priceWithVat = productPrice * (1 + VatRate);
+
+Console.WriteLine($"Учебное заведение: {CollegeName}");
+Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
