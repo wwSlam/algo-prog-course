@@ -89,3 +89,17 @@ double priceWithVat = productPrice * (1 + VatRate);
 
 Console.WriteLine($"Учебное заведение: {CollegeName}");
 Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+
+
+Console.WriteLine();
+Console.WriteLine("Финансовый мини-расчёт");
+
+int scholarship = 5000;
+int monthlyExpenses = 4500;
+const int monthsInSemester = 4;
+
+int rashod = scholarship - monthlyExpenses;
+int rashodsemest = rashod * monthsInSemester;
+
+Console.WriteLine($"К концу месяца останется: {rashod}");
+Console.WriteLine($"За весь семестр: {rashodsemest}");
