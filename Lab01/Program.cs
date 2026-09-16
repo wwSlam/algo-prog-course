@@ -103,3 +103,13 @@ int rashodsemest = rashod * monthsInSemester;
 
 Console.WriteLine($"К концу месяца останется: {rashod}");
 Console.WriteLine($"За весь семестр: {rashodsemest}");
+
+
+
+Console.WriteLine();
+Console.WriteLine("Задание 3");
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int vsego = totalMinutes / minutesPerLesson;
+int ostvsego = totalMinutes % minutesPerLesson;
+Console.WriteLine($"{totalMinutes} минут = {vsego} полных занятий + {ostvsego} минут");
